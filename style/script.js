@@ -5,7 +5,7 @@ const sound = document.getElementById("sound");
 // Khi người dùng chạm/click thì phát nhạc
 document.addEventListener("click", () => {
   if (sound.paused) {
-    sound.currentTime = 11;
+    // sound.currentTime = 11;
     sound.play().catch(err => console.log("Không phát được nhạc:", err));
   }
 }, { once: true }); // chỉ cần chạm 1 lần để phát nhạc
@@ -146,3 +146,4 @@ pages.forEach((page) => {
   });
 
 });
+
